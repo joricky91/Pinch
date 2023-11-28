@@ -52,10 +52,10 @@
 			isa = PBXGroup;
 			children = (
 				37B7AF032B15E47B00848181 /* PinchApp.swift */,
-				37B7AF142B15E60500848181 /* Data */,
-				37B7AF132B15E60100848181 /* Model */,
+				516DCB682B15E81F007EEAB1 /* Data */,
+				516DCB692B15E828007EEAB1 /* Model */,
 				37B7AF112B15E5D900848181 /* Screens */,
-				37B7AF122B15E5EC00848181 /* Views */,
+				516DCB6A2B15E82F007EEAB1 /* Views */,
 				37B7AF072B15E47C00848181 /* Assets.xcassets */,
 				37B7AF092B15E47C00848181 /* Preview Content */,
 			);
@@ -78,25 +78,25 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		37B7AF122B15E5EC00848181 /* Views */ = {
+		516DCB682B15E81F007EEAB1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Views;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		37B7AF132B15E60100848181 /* Model */ = {
+		516DCB692B15E828007EEAB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		37B7AF142B15E60500848181 /* Data */ = {
+		516DCB6A2B15E82F007EEAB1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Data;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
