@@ -11,6 +11,7 @@
 		37B7AF062B15E47B00848181 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7AF052B15E47B00848181 /* ContentView.swift */; };
 		37B7AF082B15E47C00848181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B7AF072B15E47C00848181 /* Assets.xcassets */; };
 		37B7AF0B2B15E47C00848181 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B7AF0A2B15E47C00848181 /* Preview Assets.xcassets */; };
+		37B7AF182B16F8A500848181 /* GlassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7AF172B16F8A500848181 /* GlassButton.swift */; };
 		516DCB6C2B15F136007EEAB1 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516DCB6B2B15F136007EEAB1 /* InfoPanelView.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		37B7AF052B15E47B00848181 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37B7AF072B15E47C00848181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B7AF0A2B15E47C00848181 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37B7AF172B16F8A500848181 /* GlassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassButton.swift; sourceTree = "<group>"; };
 		516DCB6B2B15F136007EEAB1 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				516DCB6B2B15F136007EEAB1 /* InfoPanelView.swift */,
+				37B7AF172B16F8A500848181 /* GlassButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				37B7AF062B15E47B00848181 /* ContentView.swift in Sources */,
 				37B7AF042B15E47B00848181 /* PinchApp.swift in Sources */,
+				37B7AF182B16F8A500848181 /* GlassButton.swift in Sources */,
 				516DCB6C2B15F136007EEAB1 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
