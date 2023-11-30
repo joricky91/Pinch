@@ -13,6 +13,8 @@
 		37B7AF0B2B15E47C00848181 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B7AF0A2B15E47C00848181 /* Preview Assets.xcassets */; };
 		37B7AF182B16F8A500848181 /* GlassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7AF172B16F8A500848181 /* GlassButton.swift */; };
 		516DCB6C2B15F136007EEAB1 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516DCB6B2B15F136007EEAB1 /* InfoPanelView.swift */; };
+		51A1CD592B1849D100712F2B /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A1CD582B1849D100712F2B /* PageModel.swift */; };
+		51A1CD5B2B184A2D00712F2B /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A1CD5A2B184A2D00712F2B /* PageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		37B7AF0A2B15E47C00848181 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37B7AF172B16F8A500848181 /* GlassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassButton.swift; sourceTree = "<group>"; };
 		516DCB6B2B15F136007EEAB1 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		51A1CD582B1849D100712F2B /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		51A1CD5A2B184A2D00712F2B /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageData.swift; path = Pinch/Model/PageData.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				37B7AF032B15E47B00848181 /* PinchApp.swift */,
-				516DCB682B15E81F007EEAB1 /* Data */,
+				51A1CD572B1849BD00712F2B /* Data */,
 				516DCB692B15E828007EEAB1 /* Model */,
 				37B7AF112B15E5D900848181 /* Screens */,
 				516DCB6A2B15E82F007EEAB1 /* Views */,
@@ -82,16 +86,10 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		516DCB682B15E81F007EEAB1 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		516DCB692B15E828007EEAB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				51A1CD582B1849D100712F2B /* PageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +101,14 @@
 				37B7AF172B16F8A500848181 /* GlassButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		51A1CD572B1849BD00712F2B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				51A1CD5A2B184A2D00712F2B /* PageData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B7AF062B15E47B00848181 /* ContentView.swift in Sources */,
+				51A1CD592B1849D100712F2B /* PageModel.swift in Sources */,
 				37B7AF042B15E47B00848181 /* PinchApp.swift in Sources */,
 				37B7AF182B16F8A500848181 /* GlassButton.swift in Sources */,
+				51A1CD5B2B184A2D00712F2B /* PageData.swift in Sources */,
 				516DCB6C2B15F136007EEAB1 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
