@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MARK: - PROPERTY
     @State private var isAnimating: Bool = false
     @State private var imageScale: CGFloat = 1
     @State private var imageOffset: CGSize = .zero
+    @State private var isDrawerOpen: Bool = false
     
+    //MARK: - FUNCTION
     func resetImageState() {
         return withAnimation(.spring()) {
             imageScale = 1
@@ -24,6 +27,7 @@ struct ContentView: View {
             ZStack {
                 Color.clear
                 
+                //MARK: - PAGE IMAGE
                 Image("magazine-front-cover")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -34,6 +38,7 @@ struct ContentView: View {
                     .animation(.linear(duration: 1), value: isAnimating)
                     .offset(x: imageOffset.width, y: imageOffset.height)
                     .scaleEffect(imageScale)
+                //MARK: - TAP GESTURE
                     .onTapGesture(count: 2) {
                         if imageScale == 1 {
                             withAnimation(.spring()) {
@@ -43,6 +48,7 @@ struct ContentView: View {
                             resetImageState()
                         }
                     }
+                //MARK: - DRAG GESTURE
                     .gesture(
                         DragGesture()
                             .onChanged{ value in
@@ -56,6 +62,7 @@ struct ContentView: View {
                                 }
                             }
                     )
+                //MARK: - MAGNIFICATION GESTURE
                     .gesture(
                         MagnificationGesture()
                             .onChanged { value in
@@ -86,6 +93,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .padding(.top, 30)
             }
+            //MARK: - CONTROLS
             .overlay(
                 Group {
                     HStack {
@@ -124,6 +132,32 @@ struct ContentView: View {
                 }
                     .padding(.bottom, 30)
                 , alignment: .bottom
+            )
+            //MARK: - DRAWER
+            .overlay(
+                HStack(spacing: 12) {
+                    Image(systemName: isDrawerOpen ? "chevron.compact.right" : "chevron.compact.left")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 40)
+                        .padding(8)
+                        .foregroundStyle(.secondary)
+                        .onTapGesture {
+                            withAnimation(.easeOut) {
+                                isDrawerOpen.toggle()
+                            }
+                        }
+                    
+                    Spacer()
+                }
+                    .padding(EdgeInsets(top: 16, leading: 8, bottom: 16, trailing: 8))
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(12)
+                    .opacity(isAnimating ? 1 : 0)
+                    .frame(width: 260)
+                    .padding(.top, UIScreen.main.bounds.height / 12)
+                    .offset(x: isDrawerOpen ? 20 : 215)
+                , alignment: .topTrailing
             )
         }
         .navigationViewStyle(.stack)
